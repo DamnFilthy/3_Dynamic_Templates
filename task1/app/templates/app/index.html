@@ -1,0 +1,26 @@
+{% load my_filters %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Django Hello World</title>
+</head>
+<body>
+    <h1 style="color:#9ab6ff">Hello from DJANGO!</h1>
+    <h2 style="color:#ffee67"> name: {{ p.upper }} age: {{ p.age }}</h2>
+    <h3> NEW NAME: {{ name }} </h3>
+    <h4> {{ 'hello'|cuto }} </h4>
+
+<!--    {% for item in items %}-->
+<!--        {% cycle 'aliceblue' 'burlywood' as color silent %}-->
+<!--        <li style="background-color: {{ color }} ">{{ item }}</li>-->
+<!--    {% endfor %}-->
+
+    <a href="{% url 'hello' 'Sasha programmer' %}">Click on me</a>
+
+</body>
+</html>
